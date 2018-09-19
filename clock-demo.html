@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="easyUtil.rollingStyle.css" />
+	</head>
+	<body>
+		<div id="times"></div>
+		<div id="times2"></div>
+		<div id="times3"></div>
+		<script type="text/javascript" src="easyUtil.rollingClock.min.1.0.js"></script>
+		<script>
+			easy_Clock.create("times");
+			easy_Clock.create("times2",{
+				height : 55,
+				bgColor : "blue"
+			});
+			easy_Clock.create("times3",{
+				height : 100,
+				color: "#fff",
+				bgColor : "red"
+			});
+		</script>
+		
+	</body>
+
+</html>

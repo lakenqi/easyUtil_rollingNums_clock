@@ -1,0 +1,37 @@
+@charset "utf-8";
+.main-container {
+	list-style: none;
+	margin: 1vw auto;
+	flex-grow: 1;
+	margin: 1vw auto;
+	overflow: hidden;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+}
+.main-container li {
+	position: relative;
+	transition: top .3s;
+	top: 0px;
+}
+.nums-part {
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+.point-part {
+	margin: 0 5px;
+}
+.init-roll {
+	-webkit-animation: nums-roll 0.1s 10 ease-out;
+	-moz-animation: nums-roll 0.1s 10 ease-out;
+	-o-animation: nums-roll 0.1s 10 ease-out;
+	animation: nums-roll 0.1s 10 ease-out;
+}
+@keyframes nums-roll {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(-800%);
+	}
+}
