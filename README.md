@@ -1,4 +1,4 @@
-  # easyUtil_poped
+  # easyUtil_rollingNums_clock
   动态时钟
 <h3>简介</h3>
 		<h4>&emsp;&emsp;js实现动态时钟，具有数字翻动效果，可自定义颜色和大小，引入css和js即可</h4>
