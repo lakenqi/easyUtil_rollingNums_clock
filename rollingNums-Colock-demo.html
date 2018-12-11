@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="easyUtil.rollingStyle.css" />
+	</head>
+
+	<body>
+		<div id="nums"></div>
+		<div id="nums2"></div>
+		<div id="times"></div>
+		<div id="times2"></div>
+		<div id="times3"></div>
+		<script type="text/javascript" src="easyUtil.rollingClock.min.1.0.js"></script>
+		<script type="text/javascript" src="easyUtil.rollingNums.min.1.0.js"></script>
+		<script>
+			//滚动数字调用
+			var nums = 769621;
+			easy_RollNums.create("nums2", nums);
+
+			//单次调用
+			easy_RollNums.create("nums", nums, {
+				color: "#df1234",
+				bgColor: "blue",
+			});
+			//轮询数字调用
+			setInterval(function() {
+				nums += 100000;
+				easy_RollNums.create("nums", nums, {
+					color: "#df1234",
+					bgColor: "blue",
+				});
+			}, 5000)
+			//滚动时钟调用
+			easy_Clock.create("times");
+			easy_Clock.create("times2", {
+				height: 55,
+				bgColor: "blue"
+			});
+			easy_Clock.create("times3", {
+				height: 100,
+				color: "#fff",
+				bgColor: "red"
+			});
+		</script>
+
+	</body>
+
+</html>
