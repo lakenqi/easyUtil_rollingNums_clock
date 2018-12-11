@@ -1,4 +1,4 @@
-  # easyUtil_rollingNums_clock
+  # easyUtil_rollingNums_clock 
   动态时钟及翻动效果的数字牌
 <h3>总述</h3> 
 <h4>&emsp;&emsp;纯js实现的两个功能插件，共用同一个rollingStyle.css样式，rollingClock为时钟的js，rollingNums为数字牌的js，均支持某块化引用</h4>
