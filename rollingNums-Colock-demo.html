@@ -14,25 +14,25 @@
 		<div id="times2"></div>
 		<div id="times3"></div>
 		<script type="text/javascript" src="easyUtil.rollingClock.min.1.0.js"></script>
-		<script type="text/javascript" src="easyUtil.rollingNums.min.1.0.js"></script>
+		<script type="text/javascript" src="easyUtil.rollingNums.min.1.1.js"></script>
 		<script>
 			//滚动数字调用
-			var nums = 769621;
-			easy_RollNums.create("nums2", nums);
-
 			//单次调用
-			easy_RollNums.create("nums", nums, {
+			var num = 769621;
+			easy_RollNums.create("nums2", num);
+
+			//根据传入的数据自动翻滚调用
+			let rollNums = easy_RollNums.create("nums", num, {
 				color: "#df1234",
 				bgColor: "blue",
 			});
-			//轮询数字调用
+			//模拟传入数组
 			setInterval(function() {
-				nums += 100000;
-				easy_RollNums.create("nums", nums, {
-					color: "#df1234",
-					bgColor: "blue",
-				});
-			}, 5000)
+				num += 100000;
+				rollNums.setNums(num); //返回对象设置数字
+				rollNums.change();  //数字翻动
+			}, 2000)
+			
 			//滚动时钟调用
 			easy_Clock.create("times");
 			easy_Clock.create("times2", {
