@@ -50,9 +50,8 @@
 				{height : 数字牌高度（Number） ,color: 字体颜色（String）,bgColor : 背景颜色（String）,borderColor :边框颜色（String） }<br/>为可选参数，默认高度25px，黑色字体，白色背景，白色边框<br/>
 			</li>
 			<li>
-				1.1版本更新自动更新数据功能：<br/>
+				1.1版本新增自动更新数据功能：<br/>
 				&emsp;&emsp;上述create方法返回数字牌对象，调用该对象的setNums(num)方法设置数字，不支持负数显示，调用change()方法动态改变数字牌显示，具体可参考demo.<br/>
 			</li>
-			
 		</ul>
 	
