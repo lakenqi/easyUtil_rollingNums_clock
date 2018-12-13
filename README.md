@@ -2,7 +2,7 @@
   动态时钟及翻动效果的数字牌
 <h3>总述</h3> 
 <h4>&emsp;&emsp;纯js实现的两个功能插件，共用同一个rollingStyle.css样式，rollingClock为时钟的js，rollingNums为数字牌的js，均支持某块化引用，可参考demo使用</h4>
-<h4>&emsp;&emsp;兼容性：IE10+,FF,Chrome及其他浏览器兼容,IE9可显示，但由于不支持过渡，没有翻页效果，IE8及以下不支持</h4>
+<h4>&emsp;&emsp;兼容性：IE10+，FF，Chrome及其他浏览器兼容，IE9可显示，但由于不支持过渡，没有翻页效果，IE8及以下不支持</h4>
 <h3>一、动态时钟简介</h3>
 		<h4>&emsp;&emsp;动态时钟，具有数字翻动效果，可自定义颜色和大小</h4>
 		<h4>&emsp;&emsp;支持模块化引用</h4>
