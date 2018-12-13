@@ -14,6 +14,7 @@
 	-webkit-transition: top .3s;
 	transition: top .3s;
 	top: 0px;
+	float: left;
 }
 .nums-part {
 	font-weight: bolder;
