@@ -8,13 +8,15 @@
 	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 .main-container li {
 	position: relative;
 	-webkit-transition: top .3s;
 	transition: top .3s;
 	top: 0px;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 }
 .nums-part {
 	font-weight: bolder;
